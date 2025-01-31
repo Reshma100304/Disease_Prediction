@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease Predictions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <img
+      src="https://th.bing.com/th/id/OIP.zaCx6wRgx3jJsEcOMRh0KgHaBf?rs=1&pid=ImgDetMain"
+      alt="College Logo"
+      id="college-logo"
+    />
+    <h1>Disease Prediction System</h1>
+  </header>
+    <main>
+        <h2 id="welcome-message"></h2>
+        <table id="disease-table" border="1">
+            <!-- Table content will be inserted here dynamically -->
+        </table>
+        <div id="precaution-section">
+            <h2>Precaution Details</h2>
+            <p id="precaution-content">Select a disease to see precautions.</p>
+        </div>
+        <button onclick="goBack()">Back</button>
+      </main>
+    <script src="script.js"></script>
+    <script>
+        // Retrieve table content from localStorage and display it
+        document.getElementById("disease-table").innerHTML = localStorage.getItem("diseaseTable");
+        const userName = localStorage.getItem("userName");
+        document.getElementById("welcome-message").innerText = `Welcome ${userName}!`;
+        function goBack() {
+            window.location.href = "index.html"; // Replace with your main page URL
+        }
+    </script>
+</body>
+</html>

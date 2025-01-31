@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Disease Prediction</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="https://th.bing.com/th/id/OIP.zaCx6wRgx3jJsEcOMRh0KgHaBf?rs=1&pid=ImgDetMain"
+        alt="College Logo"
+        id="college-logo"
+      />
+      <h1>Disease Prediction System</h1>
+    </header>
+    <section class="introduction">
+      <p>This tool is designed to help you understand potential health risks based on your family's medical history. By providing information about your blood group and the health history of your immediate family members, you can receive personalized disease predictions and precautions to take proactive measures for your health.</p>
+    </section>
+    <main id="main-content">
+      <!-- Initial form content -->
+      <form id="prediction-form">
+        <div class="form-group">
+          <label for="name" class="mandatory-label">Enter your Name: </label>
+          <input type="text" id="name" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="blood-group" aria-required="false" >Select your blood group:  </label>
+          <select id="blood-group" name="blood-group" class="form-control" required>
+            <option>---</option>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+          </select>
+        </div>
+        <h3>Family Health History</h3>
+        <div class="form-group">
+          <label>Blood Pressure: </label>
+          <input type="text" id="bp" class="form-control" value="YES/NO">
+          <label for="bp-age">At what age: </label>
+          <input type="number" id="bp-age" class="form-control">
+        </div>
+        <div class="form-group">
+          <label>Sugar (Pancreas): </label>
+          <input type="text" id="sugar" class="form-control" value="YES/NO">
+          <label for="sugar-age">At what age: </label>
+          <input type="number" id="sugar-age" class="form-control">
+        </div>
+        <div class="form-group">
+          <label>Asthma: </label>
+          <input type="text" id="asthma" class="form-control" value="YES/NO">
+          <label for="asthma-age">At what age: </label>
+          <input type="number" id="asthma-age" class="form-control">
+        </div>
+        <div class="form-group">
+          <label>Eye Sight: </label>
+          <input type="text" id="es" class="form-control" value="YES/NO">
+          <label for="eye-sight-age">At what age: </label>
+          <input type="number" id="eye-sight-age" class="form-control">
+        </div>
+        <button type="button" class="submit-button" onclick="showDiseasePrediction()">Submit</button>
+      </form>
+      <div id="welcome-message"></div>
+
+      <table id="disease-table" border="1">
+        <!-- Table content will be inserted here by JavaScript -->
+      </table>
+
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

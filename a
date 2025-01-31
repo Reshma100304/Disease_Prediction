@@ -1,0 +1,26 @@
+[33mcommit d0f10ad10f41b5143782d2747f07cd4f07960bd4[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: sampath <sampathsriram4292@gmail.com>
+Date:   Wed Nov 13 19:18:50 2024 +0530
+
+    console.log(windows);
+
+[1mdiff --git a/precautions.js b/precautions.js[m
+[1mindex 28dc060..ac4a74b 100644[m
+[1m--- a/precautions.js[m
+[1m+++ b/precautions.js[m
+[36m@@ -1,3 +1,5 @@[m
+[32m+[m[32mconsole.log(window);[m
+[32m+[m
+ const precautions = {[m
+   "Hypertension": "Precaution for Disease is Maintain a healthy diet and regular exercise.",[m
+   "Diabetes": "Precaution for Disease is Monitor blood sugar levels regularly.",[m
+[1mdiff --git a/script.js b/script.js[m
+[1mindex 3c252a3..4a9a791 100644[m
+[1m--- a/script.js[m
+[1m+++ b/script.js[m
+[36m@@ -1,4 +1,4 @@[m
+[31m-[m
+[32m+[m[32mconsole.log(window);[m
+ function showPrecaution(disease) {[m
+   const precautions = {[m
+     "Hyperaldosteronism": "Reduce sodium intake, take prescribed medications, and monitor blood pressure regularly.",[m
